@@ -1,0 +1,85 @@
+// src/data/site.ts
+import Benton from '@/images/attorneys/Benton_Patton.jpg'
+import Britney from '@/images/attorneys/Britney_Pope.jpg'
+import Chris from '@/images/attorneys/Chris_Jones.jpg'
+import Cindy from '@/images/attorneys/Cindy_Plymire.jpg'
+import Mark from '@/images/attorneys/Mark_Levan.jpg'
+import Paul from '@/images/attorneys/Paul_Sprader.jpg'
+
+export const FIRM_NAME = 'Levan, Sprader & Plymire'
+export const CONTACT_EMAIL = 'info@examplelaw.com' // TODO: replace
+
+export const navigation = [
+  { name: 'Home', href: '#home' },
+  { name: 'Mediation', href: '#mediation' },
+  { name: 'Attorneys', href: '#attorneys' },
+  { name: 'Practice Areas', href: '#practice-areas' },
+  { name: 'Clients', href: '#clients' },
+  { name: 'Contact', href: '#contact' },
+]
+
+export const mediators = [
+  {
+    name: 'Mark Levan',
+    role: 'Mediator',
+    email: 'mark.levan@examplelaw.com', // TODO: replace
+    image: Mark,
+  },
+  {
+    name: 'Cynthia D. Plymire',
+    role: 'Mediator',
+    email: 'cynthia.plymire@examplelaw.com', // TODO: replace
+    image: Cindy,
+  },
+]
+
+export const attorneys = [
+  { name: 'Benton Patton', image: Benton },
+  { name: 'Britney Pope', image: Britney },
+  { name: 'Chris Jones', image: Chris },
+  { name: 'Cynthia D. Plymire', image: Cindy },
+  { name: 'Mark Levan', image: Mark },
+  { name: 'Paul Sprader', image: Paul },
+]
+
+export const practiceAreas = [
+  { name: 'Motor vehicle accidents', icon: 'Truck' },       // using Truck icon for vehicles
+  { name: 'Premises liability', icon: 'BuildingOffice' },
+  { name: 'Products liability', icon: 'Cube' },
+  { name: 'Wrongful death claims', icon: 'Heart' },
+  { name: 'Pedestrian accidents', icon: 'User' },
+  { name: 'Catastrophic trucking accidents', icon: 'Truck' },
+  { name: 'Construction defects', icon: 'Wrench' },
+  { name: 'Defamation / Libel', icon: 'Megaphone' },
+  { name: 'Insurance contract disputes', icon: 'DocumentText' },
+]
+
+export const clients = [
+  'Alfa Vision Insurance Company',
+  'American Commerce Insurance Company (“MAPRE”)',
+  'American Indemnity Company',
+  'American International Group (AIG) & affiliates, incl. AIG Claims Services, Inc.',
+  'American National Property & Casualty Co.',
+  'American Reliable Insurance Co.',
+  'Auto Owners Insurance Co.',
+  'AXA Global Risks',
+  'Berkshire Hathaway Companies',
+  'Berkley Risk Administrators Co.',
+  'Bituminous Insurance Co.',
+  'Blazin’ Wings dba Buffalo Wild Wings',
+  'CAN Insurance Co.',
+  'Carolina Casualty Company',
+  'Clarendon National Ins. Co.',
+  'Consolidated Freightways',
+  'Consumers Continental Western Insurance Co.',
+  'Conway Transportation',
+  'Country Insurance & Financial Services',
+  'Crum & Forster Insurance',
+  'Empire Fire & Marine',
+  'Erie Insurance Group',
+  'Esurance',
+  'First Mercury Insurance',
+  'Gallagher Bassett Services',
+  'Global Risk Holdings',
+  'Government Employees Insurance Company (“GEICO”)',
+]

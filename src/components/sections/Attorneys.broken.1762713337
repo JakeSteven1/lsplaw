@@ -1,0 +1,51 @@
+import Image from 'next/image'
+import { attorneys } from '@/data/site'
+
+export default function Attorneys() {
+  return (
+    <section id="attorneys" className="bg-white py-24 sm:py-32 dark:bg-gray-900">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-2xl sm:text-center">
+          <h2 className="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl dark:text-white">
+            Our Attorneys
+          </h2>
+          <p className="mt-6 text-lg/8 text-gray-600 dark:text-gray-400">
+            We&apos;re a team of practical, trial-tested advocates focused on efficient, favorable outcomes.
+          </p>
+        </div>
+
+        <ul
+          role="list"
+          className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-6 gap-y-20 sm:grid-cols-2 lg:max-w-4xl lg:gap-x-8 xl:max-w-none"
+        >
+          {attorneys.map((person) => (
+            <li key={person.name} className="flex flex-col gap-6 xl:flex-row">
+              <div className="aspect-[4/5] w-52 flex-none overflow-hidden rounded-2xl outline-1 -outline-offset-1 outline-black/5 dark:outline-white/10 relative">
+                <Image
+                  alt={person.name}
+                  src={person.image}
+                  fill
+                  sizes="208px"
+                  className="object-cover"
+                  priority={false}
+                />
+              </div>
+              <div className="flex-auto">
+                <h3 className="text-lg/8 font-semibold tracking-tight text-gray-900 dark:text-white">{person.name}</h3>
+                {person.role && (
+                  <p className="text-base/7 text-gray-600 dark:text-gray-400">{person.role}</p>
+                )}
+                {person.email && (
+                  <p className="mt-1 text-sm text-indigo-600 dark:text-indigo-400">
+                    <a href={`mailto:${person.email}`}>{person.email}</a>
+                  </p>
+                )}
+                <p className="mt-6 text-base/7 text-gray-600 dark:text-gray-400">{person.bio}</p>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )
+}
