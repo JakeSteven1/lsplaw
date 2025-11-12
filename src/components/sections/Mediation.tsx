@@ -6,7 +6,10 @@ export default function Mediation() {
   return (
     <section id="mediation" className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
       <div className="mx-auto max-w-3xl text-center">
-        <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight">Mediation</h2>
+        {/* Heading now dark-mode safe */}
+        <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-gray-900 dark:text-white">
+          Mediation
+        </h2>
         <p className="mt-4 text-gray-600 dark:text-gray-300">
           We conduct mediations <strong>by referral only</strong>. To schedule, please contact one of our mediators below.
         </p>
@@ -18,14 +21,12 @@ export default function Mediation() {
 
       <div className="mx-auto mt-12 grid max-w-5xl grid-cols-1 gap-6 sm:grid-cols-2">
         {mediators.map((m) => {
-          // Route emails per client request
           const email =
             m.name.toLowerCase().startsWith('mark')
               ? 'mhester@lsplaw.net'
               : 'cplymire@lsplaw.net'
 
           const subject = `Mediation scheduling for ${m.name}`
-
           const isMark = m.name.toLowerCase().startsWith('mark')
           const scheduleUrl = isMark ? 'https://tennesseemediators.org/mark-levan' : undefined
 
@@ -38,7 +39,8 @@ export default function Mediation() {
                 <Image src={m.image} alt={m.name} fill className="object-cover" />
               </div>
               <div className="flex-1">
-                <h3 className="text-lg font-semibold">{m.name}</h3>
+                {/* Mediator name now flips to white in dark mode */}
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">{m.name}</h3>
                 <p className="text-sm text-gray-600 dark:text-gray-300">{m.role}</p>
                 <div className="mt-3 flex flex-wrap items-center gap-4">
                   <a
@@ -47,7 +49,6 @@ export default function Mediation() {
                   >
                     Email to schedule →
                   </a>
-
                   {scheduleUrl && (
                     <a
                       href={scheduleUrl}
