@@ -22,7 +22,7 @@ export default function Page() {
       </main>
       <footer className="mx-auto max-w-7xl px-6 py-10 lg:px-8 border-t border-gray-900/10 dark:border-white/10">
         <p className="text-sm text-gray-600 dark:text-gray-400">
-          © {new Date().getFullYear()} Levan, Sprader & Plymire. All rights reserved.
+          © {new Date().getFullYear()} LeVan, Sprader, Patton & Plymire. All rights reserved.
         </p>
       </footer>
     </div>

@@ -5,8 +5,10 @@ import Chris from '@/images/attorneys/Chris_Jones.jpg'
 import Cindy from '@/images/attorneys/Cindy_Plymire.jpg'
 import Mark from '@/images/attorneys/Mark_Levan.jpg'
 import Paul from '@/images/attorneys/Paul_Sprader.jpg'
+import Leaver from '@/images/Leaver.jpg'
 
-export const FIRM_NAME = 'Levan, Sprader & Plymire'
+
+export const FIRM_NAME = 'LeVan, Sprader, Patton & Plymire'
 export const CONTACT_EMAIL = 'info@examplelaw.com' // TODO: replace
 
 export const navigation = [
@@ -72,11 +74,18 @@ export const attorneys = [
   },
   {
     name: 'Chris Jones',
-    role: 'Attorney',
+    role: 'Partner',
     image: Chris,
     email: '',
     bio: `Attorney at the firm (bio details forthcoming).`,
   },
+    {
+    name: 'Jamie A. Leaver',
+    role: 'Associate Attorney',
+    image: Leaver,
+    email: '',
+  },
+
 ]
 
 export const practiceAreas = [
