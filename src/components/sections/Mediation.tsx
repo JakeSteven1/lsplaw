@@ -13,9 +13,9 @@ export default function Mediation() {
         <p className="mt-4 text-gray-600 dark:text-gray-300">
           We conduct mediations <strong>by referral only</strong>. To schedule, please contact one of our mediators below.
         </p>
-        <p className="mt-2 inline-flex items-center gap-2 text-sm text-amber-700 dark:text-amber-300">
-          <InformationCircleIcon className="size-5" />
-          We do not accept direct bookings from the public.
+        <p className="mt-2 inline-flex items-start gap-2 text-sm text-amber-700 dark:text-amber-300">
+          <InformationCircleIcon className="mt-0.5 size-5 shrink-0" />
+          <span>We do not accept direct bookings from the public.</span>
         </p>
       </div>
 

@@ -24,11 +24,7 @@ export default function Attorneys() {
   return (
     <section
       id="attorneys"
-      className="
-        font-sans
-        [font-family:var(--font-inter),_ui-sans-serif,_system-ui,_-apple-system,_Segoe_UI,_Roboto,_Helvetica,_Arial,_Apple_Color_Emoji,_Segoe_UI_Emoji]
-        bg-white py-24 sm:py-32 dark:bg-gray-900
-      "
+      className="bg-white py-24 sm:py-32 dark:bg-gray-900"
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Section Header */}

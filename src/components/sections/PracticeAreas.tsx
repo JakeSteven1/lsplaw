@@ -1,6 +1,13 @@
 import {
-  BuildingOfficeIcon, CubeIcon, HeartIcon, MegaphoneIcon,
-  TruckIcon, UserIcon, WrenchScrewdriverIcon, DocumentTextIcon, ScaleIcon
+  BuildingOfficeIcon,
+  CubeIcon,
+  HeartIcon,
+  MegaphoneIcon,
+  TruckIcon,
+  UserIcon,
+  WrenchScrewdriverIcon,
+  DocumentTextIcon,
+  ScaleIcon,
 } from '@heroicons/react/24/outline'
 import { practiceAreas } from '@/data/site'
 
@@ -18,7 +25,6 @@ const iconMap: Record<string, any> = {
 export default function PracticeAreas() {
   return (
     <section id="practice-areas" className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
-      {/* Add dark text color to the section heading */}
       <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-gray-900 dark:text-white">
         Practice Areas
       </h2>
@@ -29,11 +35,21 @@ export default function PracticeAreas() {
           return (
             <div
               key={item.name}
-              className="rounded-2xl border border-gray-200 p-6 shadow-sm bg-white/70
-                         dark:border-white/10 dark:bg-white/5"
+              className="
+                group
+                rounded-2xl border border-gray-200 p-6 shadow-sm bg-white/70
+                transition
+                hover:-translate-y-0.5 hover:shadow-md hover:border-indigo-200
+                dark:border-white/10 dark:bg-white/5 dark:hover:border-indigo-400/40
+              "
             >
-              <Icon className="size-6 text-indigo-600 dark:text-indigo-400" />
-              {/* Ensure the card title flips to light in dark mode */}
+              <Icon
+                className="
+                  size-6 text-indigo-600 dark:text-indigo-400
+                  transition-transform
+                  group-hover:scale-110
+                "
+              />
               <h3 className="mt-3 font-semibold text-gray-900 dark:text-white">
                 {item.name}
               </h3>
