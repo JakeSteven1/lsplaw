@@ -26,13 +26,13 @@ export default function Page() {
       © {new Date().getFullYear()} LeVan, Sprader, Patton & Plymire. All rights reserved.
     </p>
 
-    <p className="text-xs text-gray-500 dark:text-gray-500">
+    <p className="text-sm text-gray-600 dark:text-gray-400">
       Powered by{' '}
       <a
         href="https://marginmedia.co"
         target="_blank"
         rel="noopener noreferrer"
-        className="hover:text-gray-700 dark:hover:text-gray-300 transition"
+        className="font-medium hover:text-gray-900 dark:hover:text-white transition"
       >
         MarginMedia
       </a>

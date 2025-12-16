@@ -1,0 +1,12 @@
+@keyframes logo-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.animate-logo-marquee {
+  animation: logo-marquee 28s linear infinite;
+}
+
+.pause-on-hover:hover .animate-logo-marquee {
+  animation-play-state: paused;
+}

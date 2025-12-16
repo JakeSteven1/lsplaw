@@ -53,13 +53,11 @@ export default function Hero() {
             <h1 className="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-6xl dark:text-white">
               LeVAN, SPRADER, PATTON &amp; PLYMIRE, PLLC
             </h1>
-            <p className="mt-8 text-lg font-medium text-pretty text-gray-700 sm:text-xl/8 dark:text-gray-300">
-              The AV rated LeVan, Sprader firm has provided quality legal services in Nashville and Middle Tennessee
-              since 1998. Its attorneys are recognized as competent, ethical, and zealous advocates, handling general
-              civil litigation in all Tennessee State and Federal Courts. The firm&apos;s practice focuses on defending
-              corporations and insurance carriers in a wide range of areas, including Insurance Defense, Products
-              Liability, and Governmental Tort Liability.
-            </p>
+              <p className="mt-8 text-lg font-medium text-pretty text-gray-700 sm:text-xl/8 dark:text-gray-300">
+              AV-rated civil litigation defense in Nashville and Middle Tennessee, representing corporations and insurance
+              carriers in Tennessee state and federal courts.
+              </p>
+
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="#mediation"
