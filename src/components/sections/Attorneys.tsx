@@ -12,13 +12,12 @@ const bios: Record<string, string> = {
     "C. Benton Patton is a founding partner who graduated from the University of Memphis School of Law in 1992 after attending Vanderbilt University. He is admitted to practice in the U.S. District Courts for the Middle and Western Districts of Tennessee. Mr. Patton's practice areas include Insurance Defense Litigation, Coverage, Premises Liability, and Trucking Litigation.",
   'Cynthia D. Plymire':
     'Cynthia D. Plymire brings extensive industry experience to the firm, having worked as a claims adjuster while attending the Nashville School of Law. Admitted to the bar in 1994, her practice focuses on Civil Litigation, Uninsured Motorist Defense, Premises Liability, and Large Loss Subrogation. Ms. Plymire has handled thousands of cases to their conclusion and is also a Tennessee Supreme Court Rule 31 Mediator.',
-  'Chris Jones':
+  'Christopher M. Jones': // UPDATED KEY
     'Christopher M. Jones is a partner from Nashville who graduated from the Nashville School of Law in 2002. He is admitted to practice in the U.S. District Courts for the Middle and Western Districts of Tennessee. His practice focuses on a range of areas including Insurance Defense, Construction Litigation, Bad Faith Claims, and Appellate Practice.',
-  // NEW ADDITION
-  'Summer O. Robinson':
-    'Summer O. Robinson is an associate attorney at the firm who graduated from Nashville School of Law in May 2021. She is admitted to practice in Tennessee State Courts and her practice focuses on Civil Litigation, Uninsured Motorist Defense, Premises Liability, and Wrongful Death.',
   'Jamie A. Leaver':
     'Jamie A. Leaver is an associate attorney at the firm who graduated from Belmont University College of Law in 2016. She is admitted to practice in Tennessee State Courts and the U.S. District Court for the Middle District of Tennessee. Her practice focuses on Insurance Defense, Construction Litigation, Premises Liability, Wrongful Death, and Trucking Litigation.',
+  'Summer O. Robinson':
+    'Summer O. Robinson is an associate attorney at the firm who graduated from Nashville School of Law in May 2021. She is admitted to practice in Tennessee State Courts and her practice focuses on Civil Litigation, Uninsured Motorist Defense, Premises Liability, and Wrongful Death.',
 }
 
 export default function Attorneys() {
