@@ -1,15 +1,17 @@
 // src/data/site.ts
 import Benton from '@/images/attorneys/Benton_Patton.jpg'
-import Britney from '@/images/attorneys/Britney_Pope.jpg'
+// REMOVED: import Britney from '@/images/attorneys/Britney_Pope.jpg'
 import Chris from '@/images/attorneys/Chris_Jones.jpg'
 import Cindy from '@/images/attorneys/Cindy_Plymire.jpg'
 import Mark from '@/images/attorneys/Mark_Levan.jpg'
 import Paul from '@/images/attorneys/Paul_Sprader.jpg'
 import Leaver from '@/images/Leaver.jpg'
+// ADDED:
+import Summer from '@/images/attorneys/summer.jpg'
 
 
 export const FIRM_NAME = 'LeVan, Sprader, Patton & Plymire'
-export const CONTACT_EMAIL = 'info@examplelaw.com' // TODO: replace
+export const CONTACT_EMAIL = 'info@examplelaw.com'
 
 export const navigation = [
   { name: 'Home', href: '#home' },
@@ -24,13 +26,13 @@ export const mediators = [
   {
     name: 'Mark Levan',
     role: 'Mediator',
-    email: 'mlevan@lsplaw.net', // real email from bio
+    email: 'mlevan@lsplaw.net',
     image: Mark,
   },
   {
     name: 'Cynthia D. Plymire',
     role: 'Mediator',
-    email: 'cplymire@lsplaw.net', // real email from bio
+    email: 'cplymire@lsplaw.net',
     image: Cindy,
   },
 ]
@@ -66,26 +68,26 @@ export const attorneys = [
     bio: `Born Kansas City, KS (Apr. 22, 1966). Bar (1994, Tennessee); U.S. District Court, Middle District of Tennessee (1996). B.S., Middle Tennessee State University (1988). Worked as claims adjuster while attending Nashville School of Law (J.D. 1994). Prior: Safeco Adjuster; CNA Legal Liability Specialist; Ortale, Kelly, Herbert & Crawford (Associate then Partner, 1995–2011). Practice: Civil Litigation (insurance, auto, etc.), UM Defense, Premises Liability, Commercial Litigation, Large Loss Subrogation, some Personal Injury. Tennessee Supreme Court Rule 31 Mediator since 2014. For mediations: 615-481-4972 or cplymire@lsplaw.net.`,
   },
   {
-    name: 'Britney Pope',
-    role: 'Attorney',
-    image: Britney,
-    email: '',
-    bio: `Attorney at the firm (bio details forthcoming).`,
-  },
-  {
     name: 'Chris Jones',
     role: 'Partner',
     image: Chris,
     email: '',
     bio: `Attorney at the firm (bio details forthcoming).`,
   },
-    {
+  // REPLACED BRITNEY WITH SUMMER HERE
+  {
+    name: 'Summer O. Robinson',
+    role: 'Associate Attorney',
+    image: Summer,
+    email: '',
+    bio: `Summer O. Robinson is an associate attorney at the firm who graduated from Nashville School of Law in May 2021.`,
+  },
+  {
     name: 'Jamie A. Leaver',
     role: 'Associate Attorney',
     image: Leaver,
     email: '',
   },
-
 ]
 
 export const practiceAreas = [

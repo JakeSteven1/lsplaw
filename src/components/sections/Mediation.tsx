@@ -1,6 +1,7 @@
+// src/components/sections/Mediation.tsx
 import Image from 'next/image'
 import { mediators } from '@/data/site'
-import { InformationCircleIcon } from '@heroicons/react/24/outline'
+// Removed InformationCircleIcon since the warning text is gone
 
 export default function Mediation() {
   return (
@@ -10,24 +11,19 @@ export default function Mediation() {
         <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-gray-900 dark:text-white">
           Mediation
         </h2>
-        <p className="mt-4 text-gray-600 dark:text-gray-300">
-          We conduct mediations <strong>by referral only</strong>. To schedule, please contact one of our mediators below.
-        </p>
-        <p className="mt-2 inline-flex items-start gap-2 text-sm text-amber-700 dark:text-amber-300">
-          <InformationCircleIcon className="mt-0.5 size-5 shrink-0" />
-          <span>We do not accept direct bookings from the public.</span>
+        <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
+          To schedule a Mediation, please contact one of our mediators below.
         </p>
       </div>
 
       <div className="mx-auto mt-12 grid max-w-5xl grid-cols-1 gap-6 sm:grid-cols-2">
         {mediators.map((m) => {
-          const email =
-            m.name.toLowerCase().startsWith('mark')
-              ? 'mhester@lsplaw.net'
-              : 'cplymire@lsplaw.net'
-
-          const subject = `Mediation scheduling for ${m.name}`
           const isMark = m.name.toLowerCase().startsWith('mark')
+          
+          const email = isMark ? 'mhester@lsplaw.net' : 'cplymire@lsplaw.net'
+          const subject = `Mediation scheduling for ${m.name}`
+          
+          // Only Mark gets the online scheduler link
           const scheduleUrl = isMark ? 'https://tennesseemediators.org/mark-levan' : undefined
 
           return (
@@ -43,18 +39,23 @@ export default function Mediation() {
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white">{m.name}</h3>
                 <p className="text-sm text-gray-600 dark:text-gray-300">{m.role}</p>
                 <div className="mt-3 flex flex-wrap items-center gap-4">
-                  <a
-                    href={`mailto:${email}?subject=${encodeURIComponent(subject)}`}
-                    className="text-sm font-semibold text-indigo-600 hover:text-indigo-500 dark:text-indigo-400"
-                  >
-                    Email to schedule →
-                  </a>
+                  {/* Logic: If it is Mark, DO NOT show email link. If it is NOT Mark, show email link. */}
+                  {!isMark && (
+                    <a
+                      href={`mailto:${email}?subject=${encodeURIComponent(subject)}`}
+                      className="text-sm font-semibold text-indigo-600 hover:text-indigo-500 dark:text-indigo-400"
+                    >
+                      Email to schedule →
+                    </a>
+                  )}
+                  
+                  {/* Logic: Only shows if scheduleUrl exists (Mark) */}
                   {scheduleUrl && (
                     <a
                       href={scheduleUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-sm font-semibold text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
+                      className="text-sm font-semibold text-indigo-600 hover:text-indigo-500 dark:text-indigo-400"
                     >
                       Schedule online →
                     </a>
